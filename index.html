@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            width: 130px;
+            height: 130px;
+            background-color:#0B2429 ;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .rain1,
+        .rain2,
+        .circle {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+        }
+        .rain1 {
+            border-radius: 50% 0 50% 50%;
+            background-color:#F3AC3C ;
+            transform: translate(-18px,18px);
+            z-index: 2;
+        }
+        .rain2 {
+            border-radius: 50% 0 50% 50%;
+            background-color:#998235 ;
+            z-index: 1;
+        }
+        .circle {
+            border-radius: 50%;
+            background-color:#F3AC3C ;
+            transform: translate(18px,-18px);
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="rain1"></div>
+        <div class="rain2"></div>
+        <div class="circle"></div>
+    </div>
+</body>
+</html>
